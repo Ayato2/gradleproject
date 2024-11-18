@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.*;
 
 import pl.edu.pjatk.gradleprojekt.model.Capybara;
 import pl.edu.pjatk.gradleprojekt.service.CapybaraService;
+import pl.edu.pjatk.gradleprojekt.service.PDFService;
 
 import java.util.List;
 
@@ -12,6 +13,7 @@ import java.util.List;
 public class MyRestController {
 
     private CapybaraService capybaraService;
+    private PDFService pdfService;
 
     @Autowired
     public MyRestController(CapybaraService capybaraService) {
