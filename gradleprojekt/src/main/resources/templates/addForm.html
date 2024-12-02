@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/addForm}" th:object="@{capybara}" method="post">
+  <input type="text" placeholder="name" th:field="@{capybara.name}">
+  <input type="text" placeholder="color" th:field="@{capybara.color}">
+
+  <input type="submit" value="Submit">
+
+</form>
+</body>
+</html>

@@ -1,5 +1,6 @@
 package pl.edu.pjatk.gradleprojekt.controller;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import pl.edu.pjatk.gradleprojekt.model.Capybara;
@@ -42,6 +43,13 @@ public class MyRestController {
     public void deleteCapybara(@PathVariable int id){
         this.capybaraService.delete(id);
     }
+
+
+
+
+
+
+
 
 
 
